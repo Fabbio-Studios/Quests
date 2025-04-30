@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Métodos de Pesquisa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .question h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 10px 0;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: none;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questionário de Métodos de Pesquisa</h1>
+    <form id="quizForm">
+        <!-- Questão 1 -->
+        <div class="question">
+            <h3>1. Qual é a principal diferença entre pesquisa básica e pesquisa aplicada?</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) A pesquisa básica é mais cara que a aplicada.</label>
+                <label><input type="radio" name="q1" value="b"> b) A pesquisa básica busca conhecimento sem aplicação prática, enquanto a aplicada resolve problemas específicos.</label>
+                <label><input type="radio" name="q1" value="c"> c) A pesquisa aplicada é usada apenas em ciências exatas.</label>
+                <label><input type="radio" name="q1" value="d"> d) A pesquisa básica é sempre qualitativa.</label>
+            </div>
+        </div>
+
+        <!-- Questão 2 -->
+        <div class="question">
+            <h3>2. Qual das opções abaixo é uma característica da pesquisa quantitativa?</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) Foco em aspectos subjetivos como crenças e valores.</label>
+                <label><input type="radio" name="q2" value="b"> b) Uso de questionários de múltipla escolha e entrevistas estruturadas.</label>
+                <label><input type="radio" name="q2" value="c"> c) Resultados baseados em percepções do pesquisador.</label>
+                <label><input type="radio" name="q2" value="d"> d) Ênfase em trabalho de campo.</label>
+            </div>
+        </div>
+
+        <!-- Questão 3 -->
+        <div class="question">
+            <h3>3. Qual é o objetivo principal da pesquisa exploratória?</h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) Testar hipóteses rigorosamente.</label>
+                <label><input type="radio" name="q3" value="b"> b) Familiarizar-se com um fenômeno pouco conhecido.</label>
+                <label><input type="radio" name="q3" value="c"> c) Descrever características de uma população.</label>
+                <label><input type="radio" name="q3" value="d"> d) Estabelecer relações de causa e efeito.</label>
+            </div>
+        </div>
+
+        <!-- Questão 4 -->
+        <div class="question">
+            <h3>4. Qual tipo de pesquisa utiliza fontes primárias, como filmes e fotografias, sem análise científica prévia?</h3>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) Pesquisa bibliográfica</label>
+                <label><input type="radio" name="q4" value="b"> b) Pesquisa documental</label>
+                <label><input type="radio" name="q4" value="c"> c) Pesquisa experimental</label>
+                <label><input type="radio" name="q4" value="d"> d) Pesquisa descritiva</label>
+            </div>
+        </div>
+
+        <!-- Questão 5 -->
+        <div class="question">
+            <h3>5. O que diferencia a pesquisa descritiva da experimental?</h3>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) A descritiva manipula variáveis, enquanto a experimental apenas observa.</label>
+                <label><input type="radio" name="q5" value="b"> b) A descritiva foca na causalidade, enquanto a experimental descreve fenômenos.</label>
+                <label><input type="radio" name="q5" value="c"> c) A descritiva descreve características sem interferência, enquanto a experimental manipula variáveis.</label>
+                <label><input type="radio" name="q5" value="d"> d) A descritiva é sempre qualitativa, enquanto a experimental é quantitativa.</label>
+            </div>
+        </div>
+
+        <!-- Questão 6 (Adaptada) -->
+        <div class="question">
+            <h3>6. Qual é a principal diferença entre pesquisa qualitativa e quantitativa?</h3>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> a) A qualitativa usa dados numéricos, enquanto a quantitativa usa percepções subjetivas.</label>
+                <label><input type="radio" name="q6" value="b"> b) A qualitativa foca em aspectos subjetivos como crenças, enquanto a quantitativa busca resultados numéricos.</label>
+                <label><input type="radio" name="q6" value="c"> c) A qualitativa é usada apenas em ciências exatas, enquanto a quantitativa é usada em ciências humanas.</label>
+                <label><input type="radio" name="q6" value="d"> d) A qualitativa não permite a participação do pesquisador, enquanto a quantitativa permite.</label>
+            </div>
+        </div>
+
+        <!-- Questão 7 (Adaptada) -->
+        <div class="question">
+            <h3>7. Qual é a principal importância da pesquisa exploratória no processo de pesquisa acadêmica?</h3>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> a) Testar hipóteses de forma rigorosa.</label>
+                <label><input type="radio" name="q7" value="b"> b) Servir como etapa inicial para pesquisas mais aprofundadas.</label>
+                <label><input type="radio" name="q7" value="c"> c) Descrever características detalhadas de uma população.</label>
+                <label><input type="radio" name="q7" value="d"> d) Estabelecer relações de causa e efeito.</label>
+            </div>
+        </div>
+
+        <!-- Questão 8 (Adaptada) -->
+        <div class="question">
+            <h3>8. Como a pesquisa bibliográfica e a documental podem se complementar?</h3>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> a) A bibliográfica usa fontes primárias, enquanto a documental usa fontes secundárias.</label>
+                <label><input type="radio" name="q8" value="b"> b) A bibliográfica fornece base teórica, enquanto a documental analisa fontes primárias sem tratamento científico.</label>
+                <label><input type="radio" name="q8" value="c"> c) Ambas utilizam apenas fontes primárias para análise.</label>
+                <label><input type="radio" name="q8" value="d"> d) A documental é usada apenas em ciências exatas, enquanto a bibliográfica é usada em ciências humanas.</label>
+            </div>
+        </div>
+
+        <!-- Questão 9 (Adaptada) -->
+        <div class="question">
+            <h3>9. O que é um estudo de caso e qual é um exemplo de sua aplicação nas ciências sociais?</h3>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> a) É uma pesquisa experimental; exemplo: testar uma nova droga.</label>
+                <label><input type="radio" name="q9" value="b"> b) É uma análise aprofundada de uma unidade; exemplo: estudar uma associação de moradores.</label>
+                <label><input type="radio" name="q9" value="c"> c) É uma pesquisa quantitativa; exemplo: pesquisa de intenção de voto.</label>
+                <label><input type="radio" name="q9" value="d"> d) É uma pesquisa bibliográfica; exemplo: revisar artigos científicos.</label>
+            </div>
+        </div>
+
+        <!-- Questão 10 (Adaptada) -->
+        <div class="question">
+            <h3>10. Qual é a principal diferença entre pesquisa descritiva e experimental em termos de objetivos?</h3>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> a) A descritiva testa hipóteses, enquanto a experimental descreve fenômenos.</label>
+                <label><input type="radio" name="q10" value="b"> b) A descritiva descreve características, enquanto a experimental busca causalidade.</label>
+                <label><input type="radio" name="q10" value="c"> c) A descritiva usa fontes primárias, enquanto a experimental usa fontes secundárias.</label>
+                <label><input type="radio" name="q10" value="d"> d) A descritiva é sempre qualitativa, enquanto a experimental é sempre quantitativa.</label>
+            </div>
+        </div>
+
+        <button type="submit">Verificar Respostas</button>
+    </form>
+
+    <div id="results">
+        <h3>Resultados</h3>
+        <p id="summary"></p>
+        <ul id="details"></ul>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'c',
+            q6: 'b',
+            q7: 'b',
+            q8: 'b',
+            q9: 'b',
+            q10: 'b'
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const resultsDiv = document.getElementById('results');
+            const summary = document.getElementById('summary');
+            const details = document.getElementById('details');
+            let correctCount = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+
+            // Clear previous results
+            details.innerHTML = '';
+
+            // Check each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const question = `q${i}`;
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                const li = document.createElement('li');
+
+                if (selectedAnswer) {
+                    const isCorrect = selectedAnswer.value === correctAnswers[question];
+                    if (isCorrect) {
+                        correctCount++;
+                        li.className = 'correct';
+                        li.textContent = `Questão ${i}: Correta`;
+                    } else {
+                        li.className = 'incorrect';
+                        li.textContent = `Questão ${i}: Incorreta (Resposta correta: ${correctAnswers[question]})`;
+                    }
+                } else {
+                    li.className = 'incorrect';
+                    li.textContent = `Questão ${i}: Não respondida (Resposta correta: ${correctAnswers[question]})`;
+                }
+                details.appendChild(li);
+            }
+
+            // Update summary
+            summary.textContent = `Você acertou ${correctCount} de ${totalQuestions} questões.`;
+            resultsDiv.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
